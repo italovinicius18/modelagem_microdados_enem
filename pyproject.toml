@@ -1,0 +1,22 @@
+[project]
+name = "modelagem-microdados-enem"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ítalo Guimarães",email = "italovinicius18@yahoo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "tqdm (>=4.67.1,<5.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "polars (>=1.21.0,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "jupyterlab (>=4.3.5,<5.0.0)",
+    "black[jupyter] (>=25.1.0,<26.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
