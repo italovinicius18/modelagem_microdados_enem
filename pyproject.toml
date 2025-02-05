@@ -13,7 +13,10 @@ dependencies = [
     "polars (>=1.21.0,<2.0.0)",
     "requests (>=2.32.3,<3.0.0)",
     "jupyterlab (>=4.3.5,<5.0.0)",
-    "black[jupyter] (>=25.1.0,<26.0.0)"
+    "black[jupyter] (>=25.1.0,<26.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "sqlalchemy (>=2.0.37,<3.0.0)",
+    "pyarrow (>=19.0.0,<20.0.0)"
 ]
 
 
