@@ -1,3 +1,9 @@
+-- Updated Rows	114107712
+-- Execute time	31m 34s
+-- Start time	Thu Feb 13 15:40:56 BRT 2025
+-- Finish time	Thu Feb 13 16:12:30 BRT 2025
+
+
 INSERT INTO FBD.ESTADO
 (CO_UF, SG_UF)
 SELECT

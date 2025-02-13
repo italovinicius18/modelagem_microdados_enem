@@ -1,3 +1,8 @@
+-- Updated Rows	0
+-- Execute time	0.117s
+-- Start time	Thu Feb 13 15:40:49 BRT 2025
+-- Finish time	Thu Feb 13 15:40:49 BRT 2025
+
 -- CRIAÇÃO DO SCHEMA (OPCIONAL)
 DROP SCHEMA IF EXISTS FBD CASCADE;
 CREATE SCHEMA FBD;

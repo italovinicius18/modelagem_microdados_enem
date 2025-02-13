@@ -141,4 +141,35 @@ No notebook `src/etl.ipynb`, são realizadas as seguintes etapas:
 - **Procedure(s)**: Inclusão de rotinas armazenadas para lógicas específicas com uso de condicionais (ex.: verificação de notas acima de determinada média).
 - **Trigger(s)**: Mecanismo de auditoria ou atualização automatizada ao inserir/atualizar/excluir registros (ex.: disparar ação ao inserir nova linha em uma tabela).
 
+### Modelagem
+
+A pasta **modelagem** contém os scripts e artefatos que documentam a criação, normalização e consulta do banco de dados. A seguir, uma descrição de cada arquivo (ou conjunto de arquivos) presente nesta pasta:
+
+- **1.DDL.sql**  
+  *Descrição:* Script que dropa (se necessário) e cria todas as tabelas do modelo de dados. Inclui a criação do schema **fbd** e a definição das tabelas, suas chaves primárias, estrangeiras, restrições (CHECK) e demais aspectos do modelo físico.
+
+- **2.DML.sql**  
+  *Descrição:* Script que insere os dados de lookup (dimensões) e as informações básicas definidas no dicionário de dados. Segue as regras: se o conteúdo for binário, utiliza-se uma cláusula CHECK; caso contrário, são criadas tabelas de domínio para auxiliar.
+
+- **3.NORMALIZA.sql**  
+  *Descrição:* Script que manipula a tabela denormalizada (MICRODADOS_ENEM). Essa etapa trata, transforma e insere os dados em suas respectivas tabelas normalizadas (por exemplo, separando informações de candidato, prova, resultado, presença, redação e questionário). Em resumo, "normaliza" a OBT (origem dos dados) para o modelo final.
+
+- **4.VIEW.sql**  
+  *Descrição:* Script para criação de uma ou mais views que consolidam informações relevantes do banco. Essas views foram criadas conforme solicitado no exercício para facilitar consultas complexas.
+
+- **5.PROCEDURE.sql**  
+  *Descrição:* Script que contém a criação de procedures (rotinas armazenadas) com comandos condicionais. Essas procedures implementam regras de negócio – por exemplo, a verificação ou atualização automática de status ou notas.
+
+- **6.TRIGGER.sql**  
+  *Descrição:* Script que cria triggers (disparadores) com lógica condicional, acionadas em momentos específicos (como antes de uma inserção ou atualização) para assegurar a integridade dos dados ou realizar ações automáticas (por exemplo, validação de notas, auditoria ou atualização de campos derivados).
+
+- **7.QUERIES.sql**  
+  *Descrição:* Script contendo cinco (ou mais) consultas SQL complexas para extrair diferentes insights dos dados. Essas queries exploram junções múltiplas, agregações, funções janela, e até geração de JSON para análise avançada.
+
+- **DER.png**  
+  *Descrição:* Diagrama Entidade-Relacionamento (DER) gerado pelo DBEAVER, que ilustra visualmente o modelo de dados (entidades, atributos e relacionamentos).
+
+- **queries/**  
+  *Conteúdo:* Pasta que contém imagens (por exemplo, 1.png, 2.png, …, 5.png) que ilustram o resultado ou o fluxo de execução das consultas presentes em **7.QUERIES.sql**.
+
 Você encontrará exemplos destes componentes no código SQL gerado pelo ETL ou em arquivos `.sql` complementares (caso existam).

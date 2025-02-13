@@ -1,3 +1,10 @@
+-- Updated Rows	251
+-- Execute time	0.056s
+-- Start time	Thu Feb 13 15:40:53 BRT 2025
+-- Finish time	Thu Feb 13 15:40:53 BRT 2025
+
+
+
 SET search_path TO fbd;
 
 -----------------------------------------------------
