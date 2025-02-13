@@ -1,4 +1,3 @@
---Para a tabela REDACAO que implementa uma regra de negócio mais robusta.
 --Neste exemplo, vamos supor que a soma das notas dos componentes (NU_NOTA_COMP1 a NU_NOTA_COMP5) não pode ultrapassar 100 pontos e,
 --além disso, que a nota final da redação (NU_NOTA_REDACAO) deve estar próxima (por exemplo, dentro de 10 pontos) da soma dos componentes,
 --caso contrário, a inserção/atualização será abortada.
