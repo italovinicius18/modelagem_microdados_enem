@@ -42,6 +42,21 @@ O projeto contempla também a criação de **view(s)**, **procedure(s)** e **tri
 ├── LICENSE
 ├── README.md
 ├── docker-compose.yml
+├── modelagem
+│   ├── 1.DDL.sql
+│   ├── 2.DML.sql
+│   ├── 3.NORMALIZA.sql
+│   ├── 4.VIEW.sql
+│   ├── 5.PROCEDURE.sql
+│   ├── 6.TRIGGER.sql
+│   ├── 7.QUERIES.sql
+│   ├── DER.png
+│   └── queries
+│       ├── 1.png
+│       ├── 2.png
+│       ├── 3.png
+│       ├── 4.png
+│       └── 5.png
 └── src
     ├── etl.ipynb
     ├── download.py
