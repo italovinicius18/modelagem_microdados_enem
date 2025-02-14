@@ -1,4 +1,4 @@
---Neste exemplo, vamos supor que a soma das notas dos componentes (NU_NOTA_COMP1 a NU_NOTA_COMP5) não pode ultrapassar 100 pontos e,
+--Neste exemplo, vamos supor que a soma das notas dos componentes (NU_NOTA_COMP1 a NU_NOTA_COMP5) não pode ultrapassar 1000 pontos e,
 --além disso, que a nota final da redação (NU_NOTA_REDACAO) deve estar próxima (por exemplo, dentro de 10 pontos) da soma dos componentes,
 --caso contrário, a inserção/atualização será abortada.
 
@@ -15,8 +15,8 @@ BEGIN
              + COALESCE(NEW.NU_NOTA_COMP4, 0)
              + COALESCE(NEW.NU_NOTA_COMP5, 0);
     
-    -- Regra 1: a soma dos componentes não deve ultrapassar 100 pontos
-    IF v_total > 100 THEN
+    -- Regra 1: a soma dos componentes não deve ultrapassar 1000 pontos
+    IF v_total > 1000 THEN
         RAISE EXCEPTION 'A soma das notas dos componentes (%.2f) ultrapassa o limite permitido de 100 pontos', v_total;
     END IF;
     
