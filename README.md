@@ -181,6 +181,9 @@ A pasta **modelagem** contém os scripts e artefatos que documentam a criação,
 - **7.QUERIES.sql**  
   *Descrição:* Script contendo cinco (ou mais) consultas SQL complexas para extrair diferentes insights dos dados. Essas queries exploram junções múltiplas, agregações, funções janela, e até geração de JSON para análise avançada.
 
+- **8.ALGEBRA.md**  
+  *Descrição:* Arquivo Markdown que descreve consultas em Álgebra Relacional, com o objetivo de ilustrar a tradução de operações SQL para a notação formal da Álgebra Relacional. Pode acessar o arquivo [aqui](modelagem/8.ALGEBRA.md).
+
 - **DER.png**  
   *Descrição:* Diagrama Entidade-Relacionamento (DER) gerado pelo DBEAVER, que ilustra visualmente o modelo de dados (entidades, atributos e relacionamentos).
 
